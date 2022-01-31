@@ -19,37 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
--------------------------------------------------------------------------------
-Licenses for included components
--------------------------------------------------------------------------------
-Spring Boot Framework
-
-Please refer to the following LICENSE-file:
-https://github.com/spring-projects/spring-boot/blob/main/LICENSE.txt
--------------------------------------------------------------------------------
-Lombok
-
-Please refer to the following LICENSE-file:
-https://github.com/projectlombok/lombok/blob/master/LICENSE
--------------------------------------------------------------------------------
-H2
-
-Please refer to the following LICENSE-file:
-https://github.com/h2database/h2database/blob/master/LICENSE.txt
--------------------------------------------------------------------------------
-Apache Commons Lang3
-
-Please refer to the following LICENSE-file:
-https://github.com/apache/commons-lang/blob/master/LICENSE.txt
--------------------------------------------------------------------------------
-Logstash Logback Encoder
-
-Please refer to the following LICENSE-file:
-https://github.com/logfellow/logstash-logback-encoder/blob/main/LICENSE
--------------------------------------------------------------------------------
-Janino
-
-Please refer to the following LICENSE-file:
-https://github.com/janino-compiler/janino/blob/master/LICENSE
--------------------------------------------------------------------------------
