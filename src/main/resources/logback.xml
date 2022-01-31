@@ -1,0 +1,22 @@
+<configuration>
+    <!-- Include the basic Spring logging config and CONSOLE appender -->
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+
+    <springProperty scope="context" name="logJson" source="log.json"/>
+
+    <appender name="CONSOLE_JSON" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder"/>
+    </appender>
+
+    <root level="INFO">
+        <if condition='property("logJson").equals("true")'>
+            <then>
+                <appender-ref ref="CONSOLE_JSON"/>
+            </then>
+            <else>
+                <appender-ref ref="CONSOLE"/>
+            </else>
+        </if>
+    </root>
+</configuration>

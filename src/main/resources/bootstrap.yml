@@ -1,0 +1,28 @@
+---
+spring:
+  application:
+    name: hashicorp-vault-poc
+  cloud:
+    vault:
+      authentication: kubernetes
+      uri: http://vault.security.svc.cluster.local:8200
+
+---
+spring:
+  config:
+    activate:
+      on-profile: staging
+  cloud:
+    vault:
+      kubernetes:
+        role: hashicorp-vault-poc-staging
+
+---
+spring:
+  config:
+    activate:
+      on-profile: production
+  cloud:
+    vault:
+      kubernetes:
+        role: hashicorp-vault-poc-production

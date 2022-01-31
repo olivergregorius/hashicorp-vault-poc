@@ -1,0 +1,45 @@
+replicaCount: 1
+
+image:
+  repository: # define repository here
+  pullPolicy: Always
+  tag: 1.0.0-SNAPSHOT
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+podAnnotations: {}
+
+podSecurityContext: {}
+
+securityContext: {}
+
+service:
+  type: ClusterIP
+  port: 8080
+
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  hosts:
+    - host: # provided by environment specific Helm values
+      paths:
+        - # provided by environment specific Helm values
+  tls:
+    - hosts:
+        - # provided by environment specific Helm values
+      secretName: # provided by environment specific Helm values
+
+resources:
+  requests:
+    memory: 256Mi
+  limits:
+    memory: 256Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}

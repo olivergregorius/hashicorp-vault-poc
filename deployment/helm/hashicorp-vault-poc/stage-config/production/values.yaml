@@ -1,0 +1,16 @@
+# Deployment options
+debug: false
+ingress:
+  hosts:
+    - host: hashicorp-vault-poc.example.com
+      paths:
+        - /
+  tls:
+    - hosts:
+        - hashicorp-vault-poc.example.com
+      secretName: hashicorp-vault-poc-certificate
+
+# Values for bootstrap.yml/application.yml
+spring:
+  profiles:
+    active: production
